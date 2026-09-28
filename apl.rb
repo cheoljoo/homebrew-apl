@@ -5,21 +5,21 @@
 class Apl < Formula
   desc "tig-style terminal viewer for Claude Code session logs"
   homepage "https://github.com/cheoljoo/ai-prompt-log"
-  version "0.9.1"
+  version "0.9.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.1/apl_0.9.1_darwin_amd64.tar.gz"
-      sha256 "632321a4b0703214d0ec096d2352ebd96edeab529692942519153987f099b0fc"
+      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.2/apl_0.9.2_darwin_amd64.tar.gz"
+      sha256 "0a6e16a5b1cec76f7d1a4292100301e54e6376a1feb1b6c9aed7b55c3e1326cd"
 
       define_method(:install) do
         bin.install "apl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.1/apl_0.9.1_darwin_arm64.tar.gz"
-      sha256 "cb5ecfa01799e604871094001acb5992165b3a68befb16af5a217fcfafb1ecac"
+      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.2/apl_0.9.2_darwin_arm64.tar.gz"
+      sha256 "19dc652ec14e65e17042be719c998712e176eb83a5ee59836190d32f6fa7aaf9"
 
       define_method(:install) do
         bin.install "apl"
@@ -29,15 +29,15 @@ class Apl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.1/apl_0.9.1_linux_amd64.tar.gz"
-      sha256 "5afbc09c63117497bdb1dbccfeec4267920f1051e8041e0e34093ddc6cd96a6c"
+      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.2/apl_0.9.2_linux_amd64.tar.gz"
+      sha256 "321df799903210bb8c8ea8a2253dcbbe5feba80014b005ad0f957abe2a654454"
       define_method(:install) do
         bin.install "apl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.1/apl_0.9.1_linux_arm64.tar.gz"
-      sha256 "b3ca19e4edd1e3e640581bd5843ee3be382974378252ed9aba139f84c8895b7d"
+      url "https://github.com/cheoljoo/ai-prompt-log/releases/download/v0.9.2/apl_0.9.2_linux_arm64.tar.gz"
+      sha256 "3ebb3e13df8712f19c9b1bbca0557cb0d95f8b0ad13e993ac7151abf4e0696e3"
       define_method(:install) do
         bin.install "apl"
       end
